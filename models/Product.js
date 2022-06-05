@@ -25,9 +25,8 @@ Product.init(
         allowNull: false,
         validate:{isDecimal: true}, 
       },
-  
-      
-      stock:{  type: DataTypes.INTEGER,
+      stock:{  
+        type: DataTypes.INTEGER,
         allowNull: false,
         validate:{isNumeric: true}, 
         defaultValue:10

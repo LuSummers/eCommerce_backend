@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
       }
     ]
   })
-    .then(dbProductData => res.json(dbProductData))
+    .then(productData => res.json(productData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -43,12 +43,12 @@ router.get('/:id', (req, res) => {
       }
     ]
   })
-    .then(dbProductData => {
-      if (!dbProductData) {
+    .then(productData => {
+      if (!productData) {
         res.status(404).json({message: 'No product found with this id'});
         return;
       }
-      res.json(dbProductData);
+      res.json(productData);
     })
     .catch(err => {
       console.log(err);
@@ -63,7 +63,7 @@ router.post('/', (req, res) => {
     price: req.body.price,
     stock: req.body.stock,
     category_id: req.body.category_id,
-    tagIds: req.body.tagIds
+    tagIds: req.body.tag_id
     })
 
     .then((product) => {
@@ -97,7 +97,7 @@ router.put('/:id', (req, res) => {
   })
     .then((product) => {
       // find all associated tags from ProductTag
-      return ProductTag.findAll({ where: { product_id: req.params.id } });
+      return ProductTag.findAll({ where: { product_id: req.params.id }});
     })
     .then((productTags) => {
       // get list of current tag_ids
@@ -135,12 +135,12 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   })
-  .then(dbProductData => {
-    if (!dbProductData) {
+  .then(productData => {
+    if (!productData) {
       rs.status(404).json({message: 'No product found with this id'});
       return;
     }
-    res.json(dbProductData);
+    res.json(productData);
   })
   .catch(err => {
     console.log(err);

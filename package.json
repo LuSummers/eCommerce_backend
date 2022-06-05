@@ -4,6 +4,7 @@
     "express": "^4.18.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16",
     "sequelize": "^6.20.1"
   },
   "scripts": {
@@ -12,7 +13,6 @@
     "watch": "nodemon server.js",
     "seed": "node seeds/index.js"
   },
-  
   "name": "ecommerce_backend",
   "description": "",
   "version": "1.0.0",
@@ -26,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/LuSummers/eCommerce_backend/issues"
   },
-  "homepage": "https://github.com/LuSummers/eCommerce_backend#readme"
+  "homepage": "https://github.com/LuSummers/eCommerce_backend#readme",
+  "keywords": []
 }
