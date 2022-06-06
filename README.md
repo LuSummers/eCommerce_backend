@@ -13,8 +13,8 @@ The user will have to install Node JS to their computer in order to perform the 
 ## Website
 
 Here are the videos for the walkthough of the application:
-pt1: https://drive.google.com/file/d/1Sw6rDk8O4BOslbdIcIcfsxu4htgrb9_4/view
-pt2: https://drive.google.com/file/d/1kw-fx6NUljyZ_Am5HMWhdothSlGRwpXN/view
+* pt1: https://drive.google.com/file/d/1Sw6rDk8O4BOslbdIcIcfsxu4htgrb9_4/view
+* pt2: https://drive.google.com/file/d/1kw-fx6NUljyZ_Am5HMWhdothSlGRwpXN/view
 
 ## Contribution
 Made by Lu Summers
